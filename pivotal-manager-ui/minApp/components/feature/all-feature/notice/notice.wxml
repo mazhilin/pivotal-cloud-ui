@@ -1,0 +1,9 @@
+<view class="notice">
+  <zan-noticebar
+          scrollable="true"
+          text="{{ dataField.content }}"
+          color="{{ dataField.color }}"
+          background-color="{{ dataField.bg_color }}"
+          left-icon="volume-o"
+  />
+</view>

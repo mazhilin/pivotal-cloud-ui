@@ -1,0 +1,73 @@
+.goods-box {
+  padding: 13rpx;
+  display: flex; }
+
+.goods-box-item {
+  flex: 1;
+  width: 50%; }
+
+.goods-item {
+  padding: 13rpx; }
+
+.goods-item-content {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2rpx 33rpx 2rpx rgba(0, 0, 0, 0.04); }
+
+.goods-box-info {
+  padding: 0 15rpx 15rpx;
+  min-height: 24rpx; }
+
+.goods-img {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.van-tag {
+  margin-right: 14rpx; }
+
+.goods-img:before {
+  content: '';
+  padding-top: 100%;
+  float: left; }
+
+.goods-img:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.goods-info-title {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #313131; }
+
+.goods-info-desc {
+  font-size: 24rpx;
+  margin-top: 20rpx; }
+
+.goods-info-price {
+  position: relative;
+  margin-top: 20rpx;
+  padding-right: 20rpx; }
+
+.price-info {
+  width: 100%;
+  font-size: 36rpx;
+  color: #B50006; }
+
+.price-info span {
+  font-size: 24rpx; }
+
+.buy-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 32rpx; }
+
+.originPrice {
+  color: #959595;
+  font-size: 24rpx;
+  text-decoration: line-through; }
+
+/*# sourceMappingURL=goods.wxss.map */

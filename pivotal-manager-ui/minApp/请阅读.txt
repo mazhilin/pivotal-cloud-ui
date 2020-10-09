@@ -1,0 +1,3 @@
+evue 文档地址：http://evue.top
+admin 管理后台地址：http://admin.evue.top
+该小程序包含微页面的组件有：商品、热区、公告

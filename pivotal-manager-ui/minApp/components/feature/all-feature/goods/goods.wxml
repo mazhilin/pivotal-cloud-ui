@@ -1,0 +1,34 @@
+<view class="goods-box" xmlns:wx="">
+  <view class="goods-box-item" wx:for="{{nGoods}}" wx:key="index">
+
+    <view class="goods-item"
+          wx:for="{{item}}"
+          wx:key="goodsIndex"
+          wx:for-index="goodsIndex"
+          wx:for-item="goodsItem"
+          data-item="{{goodsItem}}"
+          catchtap="goodsFun"
+    >
+      <view class="goods-item-content">
+        <view class="goods-img" style="background-image: url({{goodsItem.mainImage}});"></view>
+        <view class="goods-box-info"
+              wx:if="{{state.productName}}">
+          <view class="goods-info-title" wx:if="{{state.productName}}">
+            {{goodsItem.productName}}
+          </view>
+          <view class="goods-info-desc" wx:if="{{state.sellingPoint&&goodsItem.sellingPoint}}">
+            {{goodsItem.sellingPoint}}
+          </view>
+          <view class="goods-info-price  goods-cell-3" wx:if="{{state.price || state.buyBtn}}">
+            <view class="price-info" wx:if="{{state.price}}"><span>¥ </span>{{goodsItem.price}}
+              <span class="originPrice">¥ 20</span>
+            </view>
+            <view class="goods-info-buy-btn" wx:if="{{state.buyBtn}}">
+              <image class="buy-btn" mode="widthFix" src="/images/buy_btn.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

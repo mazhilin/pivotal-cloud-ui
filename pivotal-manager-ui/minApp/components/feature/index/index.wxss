@@ -1,0 +1,7 @@
+.micro-box {
+  font-size: 0;
+  background: #fff;
+  width: 100vw;
+  overflow: hidden; }
+
+/*# sourceMappingURL=index.wxss.map */
