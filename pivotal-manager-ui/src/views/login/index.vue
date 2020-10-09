@@ -254,16 +254,16 @@ $cursor: #fff;
 }
 </style>
 
-<style lang="scss" scoped>
-$bg:#2d3a4b;
-$dark_gray:#889aa4;
-$light_gray:#eee;
+<style lang="scss">
+  $bg: #2d3a4b;
+  $dark_gray: #889aa4;
+  $light_gray: #eee;
 
-.login-container {
-  min-height: 100%;
-  width: 100%;
-  background-color: $bg;
-  overflow: hidden;
+  .login-container {
+    min-height: 100%;
+    width: 100%;
+    background-color: $bg;
+    overflow: hidden;
 
   .login-form {
     position: relative;

@@ -1,0 +1,51 @@
+.system-user-container {
+  font-size: 12px;
+
+  .el-form-item__label {
+    font-size: 12px;
+    font-weight: normal;
+    color: #222;
+  }
+
+  .sys-btn-box {
+    margin-bottom: 10px;
+  }
+
+  .el-tree-node__content {
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .sector-title {
+    margin-bottom: 10px;
+  }
+
+  .system-user-box {
+    display: flex;
+    font-size: 12px;
+
+    .system-user-sector {
+      width: 160px;
+    }
+
+    .system-user-content {
+      flex: 1;
+    }
+  }
+
+  .input-box {
+    display: inline-block;
+    width: 250px;
+  }
+
+  .add-user-pop {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+
+  .choose-sector {
+    font-size: 12px;
+    color: #222;
+  }
+}

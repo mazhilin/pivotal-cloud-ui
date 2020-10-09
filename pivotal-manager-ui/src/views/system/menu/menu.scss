@@ -1,0 +1,39 @@
+.system-menu-container {
+  font-size: 12px;
+
+  .content-box {
+    margin-top: 15px;
+  }
+
+  .el-form-item__label {
+    font-weight: normal;
+  }
+
+  .dialog-content {
+    .e-vue-form .e-vue-childen {
+      .el-input {
+        width: 350px;
+      }
+
+      .is-controls-right {
+        .el-input {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.menu-icon-box {
+  height: 200px;
+  overflow-y: scroll;
+
+  div {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: -5px;
+    cursor: pointer;
+    width: 33%;
+    float: left;
+  }
+}
