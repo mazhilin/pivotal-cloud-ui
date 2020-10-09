@@ -1,0 +1,109 @@
+.detail {
+  font-size: 14px;
+  .margin-button-10{
+    margin-bottom: 10px;
+  }
+  p {
+    padding: 0;
+    margin-bottom: 5px;
+    color: #323233;
+  }
+  .el-button-edit{
+    padding: 0;
+    margin-left: 5px;
+    color: #155bd4;
+  }
+  .tag-container{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    .tag-item{
+      margin: 0 10px 5px 14px;
+    }
+  }
+  /* 暂无标签 */
+  .none-label{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #666;
+  }
+  .display-flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .display-flex-j-c{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+  }
+  .title{
+    border-left: 4px solid #155bd4;
+    padding: 0 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #323233;
+  }
+  .info-content{
+    padding: 19px 12px 0;
+    .item{
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-grow: 1;
+      .portrait{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 30px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .remarks{
+        .edit{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  /* 资产信息 */
+  .assets-information{
+    .info-content{
+      padding: 20px 30px;
+    }
+    .assets-item div{
+      position: relative;
+    }
+    .assets-item + .assets-item{
+      border-left: 1px solid #e5e5e5;
+    }
+    .number{
+      font-size: 22px;
+      color: #155bd4;
+      cursor: pointer;
+      display: block;
+      margin-top: 9px;
+    }
+    .continue-book{
+      color: #155bd4;
+      font-size: 12px;
+      position: absolute;
+      bottom: -28px;
+      cursor: pointer;
+    }
+  }
+  /* 交易统计 */
+  .transaction{
+    .number{
+      color: #323233;
+    }
+  }
+}

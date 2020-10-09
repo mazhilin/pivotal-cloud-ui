@@ -1,0 +1,339 @@
+.micro-image-ad-box {
+  .cursor {
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+
+    &.color {
+      color: #2c3e50;
+    }
+  }
+
+  .typeName {
+    display: inline-block;
+    border: 1px solid rgba(51, 136, 255, 0.3);
+    background: #e2f3ff;
+    padding: 1px 4px;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+  img {
+    width: 100%;
+    user-select: none;
+  }
+
+  .ad-view-box {
+    position: relative;
+    overflow: hidden;
+
+    &.ad-view-2, &.ad-view-3 {
+      white-space: nowrap;
+      display: -webkit-box;
+
+      .image-ad-view {
+        width: 100%;
+      }
+    }
+
+    &.ad-view-3 {
+      .image-ad-view {
+        width: 40%;
+      }
+    }
+
+
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    display: none;
+  }
+
+  .image-ad-view {
+    position: relative;
+    height: 135px;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #ebf8fd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #88c4dc;
+    text-align: center;
+
+    .image-ad-title {
+      line-height: 135px;
+    }
+
+
+  }
+
+  .ad-po {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+
+    span {
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background: #7d7e80;
+      display: inline-block;
+      margin: 0 3px;
+
+      &:first-child {
+        background: #679fce;
+      }
+    }
+  }
+
+  .image-ad-edit {
+    .ad-edit-item {
+      display: flex;
+
+      .ad-edit-item-title {
+        width: 65px;
+      }
+
+      .ad-edit-item-content {
+        flex: 1;
+
+        .item-box-type {
+          background: #fff;
+          padding: 10px;
+          width: 75px;
+          height: 75px;
+          margin: 0 10px 10px 0;
+          border: 1px solid #e5e5e5;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover, &.active {
+            border: 1px solid #679fce;
+          }
+
+          img {
+            width: 100%;
+          }
+
+          p {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+
+    .ad-add-image {
+      background: #fff;
+      padding: 10px 0;
+      text-align: center;
+      border: 1px dashed #e5e5e5;
+      margin-top: 10px;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px dashed #38f;
+      }
+
+      p {
+        color: #38f;
+      }
+    }
+  }
+
+  .ad-hot-box {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .box-img {
+      position: relative;
+      height: auto;
+      width: 500px;
+      vertical-align: middle;
+      border: 0;
+    }
+  }
+
+  .ad-drag {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    user-select: auto;
+    touch-action: none;
+    cursor: move;
+    border: 1px solid #38f;
+    background: rgba(51, 136, 255, .5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      .el-icon-close {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    * {
+      user-select: auto;
+      touch-action: none;
+    }
+
+    .el-dropdown-link {
+      color: #fff;
+    }
+
+
+  }
+
+  .ad-image-list {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    border: 1px dashed #e5e5e5;
+    margin-top: 10px;
+
+    &:hover {
+      border: 1px dashed #38f;
+
+
+    }
+
+    > div {
+      &:first-child {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        cursor: all-scroll;
+
+        .re-choose-img {
+          position: absolute;
+          margin: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.52);
+          text-align: center;
+          padding: 2px 0;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+
+      &:last-child {
+        flex: 1;
+      }
+    }
+
+    .ad-image-list-img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: #ccc;
+    }
+
+    .ad-image-list-content {
+      position: relative;
+      padding-left: 10px;
+      display: flex;
+      align-items: center;
+
+      .close-icon {
+        top: -10px;
+        right: -10px;
+      }
+
+      &:hover {
+        .close-icon {
+          cursor: pointer;
+          display: block;
+        }
+      }
+
+      .el-input {
+        width: 200px;
+        margin-left: 10px;
+      }
+
+      .ad-image-link {
+        margin-top: 10px;
+
+        p {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .ad-image-hot {
+    position: relative;
+    margin-top: 10px;
+
+    .ad-image-hot-box {
+      position: relative;
+
+      &:hover {
+        .close-icon {
+          cursor: pointer;
+          display: block;
+        }
+      }
+    }
+
+    .add-ad-image {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 6px;
+      border: 1px solid #459ae9;
+      cursor: pointer;
+      color: #459ae9;
+      margin-right: 10px;
+    }
+
+    img {
+      width: 100%;
+      user-select: none;
+    }
+
+    .ad-image-hot-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      cursor: all-scroll;
+
+      span.ad-hot-box-item {
+        position: absolute;
+        border: 1px solid #38f;
+        background: rgba(51, 136, 255, .5);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+          .el-icon-close {
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}

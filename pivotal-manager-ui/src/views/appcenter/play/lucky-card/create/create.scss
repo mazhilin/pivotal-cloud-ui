@@ -1,0 +1,118 @@
+.lucky-card-create-container {
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    display: block;
+  }
+
+  .box-steps {
+    margin-bottom: 20px;
+    overflow: hidden;
+    line-height: 1.5;
+    font-size: 0;
+    display: flex;
+
+    .box-steps-item {
+      flex: 1;
+      padding: 0 8px;
+      cursor: pointer;
+
+      &:first-child {
+        .box-steps-step {
+          &:before {
+            display: none;
+          }
+        }
+      }
+
+      &:last-child {
+        .box-steps-step {
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      &.is-finish {
+        .box-steps-step {
+          background: #38f;
+          color: #fff;
+
+          &:after {
+            border-left-color: #38f;
+          }
+
+          &:before {
+            border-top-color: #38f;
+            border-bottom-color: #38f;
+          }
+        }
+      }
+
+      .box-steps-step {
+        position: relative;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+        background: #eeeeee;
+        color: #666;
+        text-align: center;
+        padding: 0 10px;
+
+        &:before, &:after {
+          content: " ";
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 22px solid transparent;
+          border-bottom: 22px solid transparent;
+          border-left: 12px solid #fff;
+          position: absolute;
+          top: 50%;
+          margin-top: -22px;
+        }
+
+        &:after {
+          right: -12px;
+          z-index: 1;
+          border-left-color: #eeeeee;
+        }
+
+        &:before {
+          left: -12px;
+          border-top-color: #eeeeee;
+          border-bottom-color: #eeeeee;
+        }
+      }
+    }
+  }
+
+  .lucky-card-box {
+    display: flex;
+
+    .lucky-card-view {
+      background: #f9f9f9;
+      box-shadow: 0 0 0 1px rgba(197, 197, 197, 0.58);
+      width: 320px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .lucky-card-edit {
+      flex: 1;
+      padding-left: 16px;
+      font-size: 12px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .add-gift {
+    margin-bottom: 20px;
+  }
+}

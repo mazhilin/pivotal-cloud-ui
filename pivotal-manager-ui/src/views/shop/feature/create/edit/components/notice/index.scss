@@ -1,0 +1,39 @@
+.micro-notice-box {
+  .notice-content {
+    height: 40px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 0 15px;
+    > i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url("/img/micro-page/notice.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+    >span{
+      display: inline-block;
+      margin-right: 4px;
+      vertical-align: top;
+      font-size: 18px;
+    }
+  }
+  .el-color-picker {
+    vertical-align: middle;
+  }
+  .reColor {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+}

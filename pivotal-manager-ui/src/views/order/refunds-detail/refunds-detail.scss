@@ -1,0 +1,311 @@
+.refunds-detail-container {
+  font-size: 12px;
+
+  .order-detail {
+    .order-status {
+      padding: 10px 0;
+      margin-bottom: 16px;
+      border: 1px solid #ebedf0;
+
+      .order-status-row {
+        display: flex;
+
+        > div {
+          box-sizing: border-box;
+          display: block;
+        }
+
+        .row-left {
+          width: 33.33%;
+          padding: 28px 16px;
+          font-size: 14px;
+
+          .row-status-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #323233;
+            line-height: 28px;
+            margin-bottom: 20px;
+          }
+
+          .row-desc {
+            margin-bottom: 10px;
+          }
+
+          .row-btn {
+            margin-top: 20px;
+          }
+        }
+
+        .row-right {
+          flex: 1;
+          border-left: 1px solid #ebedf0;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+
+          .row-right-steps {
+            width: 70%;
+          }
+
+          .el-step__title, .el-step__description {
+            font-size: 12px;
+            color: #969799;
+
+            &.is-success {
+              color: #323233;
+            }
+          }
+        }
+      }
+
+      .order-desc {
+        padding: 28px 16px;
+        border-top: 1px solid #f7f8fa;
+
+        > span {
+          color: #faab0c;
+        }
+
+        .order-desc-list {
+          vertical-align: top;
+          display: inline-block;
+
+          p {
+            margin-bottom: 5px;
+            color: #646566;
+          }
+        }
+      }
+    }
+
+    /**售后维权*/
+    .content-region {
+      position: relative;
+      border: 1px solid #e5e5e5;
+      margin-bottom: 15px;
+      display: flex;
+
+      &:before {
+        display: table;
+        line-height: 0;
+        content: "";
+      }
+
+      .info-region {
+        float: left;
+        width: 320px;
+        padding: 15px 15px 100px 15px;
+        border-right: 1px solid #e5e5e5;
+        box-sizing: border-box;
+
+        .region-title {
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+
+        .info-region-goods {
+          padding: 10px 0;
+          display: flex;
+
+          .goods-img {
+            width: 60px;
+            height: 60px;
+          }
+
+          .goods-info {
+            padding-left: 10px;
+            flex: 1;
+
+            p {
+              margin-bottom: 5px;
+            }
+          }
+        }
+
+        .region-order {
+          padding: 10px 0;
+          color: #999;
+          vertical-align: top;
+          word-break: break-all;
+
+          > div {
+            margin-bottom: 10px;
+
+            p {
+              &:first-child {
+                width: 88px;
+                text-align: right;
+              }
+
+              span {
+                color: #f60;
+              }
+            }
+          }
+
+          p {
+            display: inline-block;
+          }
+        }
+      }
+
+      .border-bottom {
+        border-bottom: 1px dashed #e5e5e5;
+      }
+
+      .border-top {
+        border-top: 1px dashed #e5e5e5;
+      }
+
+      .state-region {
+        flex: 1;
+        padding: 20px 20px 140px 20px;
+        margin-left: -1px;
+        border-left: 1px solid #e5e5e5;
+
+        .state-region-box {
+          padding: 0 0 30px 40px;
+
+          .icon-info {
+            position: absolute;
+            left: -40px;
+            width: 28px;
+            height: 28px;
+            border: 2px solid #07d;
+            border-radius: 28px;
+            line-height: 24px;
+            text-align: center;
+            box-sizing: border-box;
+            font-family: serif;
+            color: #07d;
+          }
+
+          .state-title {
+            position: relative;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .state-desc {
+            margin-bottom: 30px;
+            color: #666;
+
+            p {
+              span {
+                color: #f60
+              }
+            }
+          }
+        }
+
+        .state-remind-region {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          left: 340px;
+
+          .state-remind {
+            padding: 20px 0 0 40px;
+
+            .state-remind-title {
+              color: #FF6600;
+              font-size: 12px;
+              margin-bottom: 10px;
+            }
+
+            ul {
+              padding-left: 4px;
+
+              li {
+                color: #999;
+                margin-bottom: 4px;
+
+                &:before {
+                  content: " · ";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /**记录*/
+    .safeguard-log {
+      border: 1px solid #e5e5e5;
+      padding: 15px;
+      position: relative;
+
+      .safeguard-log-title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .send-comments {
+        float: right;
+        color: #07d;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        display: block;
+        cursor: pointer;
+      }
+
+      .safeguard-log-list {
+        padding: 30px 0 10px 0;
+        border-bottom: 1px dashed #e5e5e5;
+
+        p {
+          color: #333;
+          margin-bottom: 4px;
+
+          span {
+            margin-left: 50px;
+            color: #999;
+          }
+        }
+      }
+    }
+
+    .order-count {
+      display: flex;
+      padding: 16px 32px 16px 0;
+      color: #646566;
+
+      p {
+        color: #333;
+        margin-bottom: 8px;
+        display: flex;
+        font-size: 12px;
+
+        &.order-get {
+          margin-top: 20px;
+          color: #323233;
+          font-size: 14px;
+          font-weight: 600;
+
+          span {
+            &:last-child {
+              font-weight: bold;
+              color: #d40000;
+              font-size: 18px;
+            }
+          }
+        }
+
+        span {
+          &:first-child {
+            color: #646566;
+          }
+
+          &:last-child {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}

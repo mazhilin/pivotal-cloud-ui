@@ -1,0 +1,159 @@
+.data-title,
+.data-tad-title {
+    // color: rgb(80, 227, 194);
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 30px;
+    font-size: 14px;
+    position: relative;
+    margin: 10px 0;
+    &.data-title::after {
+        position: absolute;
+        content: '';
+        left: 1em;
+        top: 50%;
+        width: 4px;
+        height: 18px;
+        transform: translateY(-50%);
+        background-color: #fe8318;
+    }
+    .el-icon-question {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #cacaca;
+    }
+    &.data-tad-title {
+        padding-left: 0;
+        position: sticky;
+        top: 0;
+        >.tabBtn {
+            display: inline-block;
+            width: 4em;
+            margin: 0 15px;
+            height: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            &.active {
+                border-bottom: 3px solid #5599ff;
+            }
+        }
+    }
+    .time-span {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .el-button {
+        margin-left: 30px;
+    }
+}
+
+.export-btn {
+    display: inline-block;
+    margin: 0 5px;
+    color: #5599ff;
+    cursor: pointer;
+}
+
+.data-tad-title-right {
+    width: auto;
+    float: right;
+    padding-right: 10px;
+    line-height: 40px;
+    .el-select {
+        width: 100px !important;
+        height: 100%;
+    }
+    .el-input__inner {
+        vertical-align: middle;
+        height: 35px;
+        line-height: 35px;
+    }
+    .date-picker-box {
+        display: inline-block;
+        width: 200px;
+        margin: 0 10px;
+    }
+    .date-pickers-box {
+        display: inline-block;
+        width: 350px;
+        margin: 0 10px;
+    }
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+    text-indent: 1em;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+span[class*='Btn'] {
+    cursor: pointer;
+}
+
+.marketing-overview-time {
+    line-height: 40px;
+    font-size: 14px;
+    padding: 20px;
+    .marketing-overview-time-box {
+        display: flex;
+        >span {
+            margin-right: 20px;
+        }
+    }
+    p {
+        color: #aaa;
+        text-indent: 6em;
+    }
+}
+
+.el-icon-question {
+    display: inline-block;
+    color: #aaa;
+}
+
+.clearfix:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' '
+}
+
+*:first-child+html .clearfix,
+*html .clearfix,
+.zoom {
+    zoom: 1
+}
+
+.sales-trand-text-info {
+    height: 130px;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    div {
+        &:nth-child(1) {
+            width: 100px;
+            text-align: center;
+        }
+        img {
+            width: 40px;
+        }
+        p {
+            line-height: 20px;
+            letter-spacing: 3px;
+        }
+    }
+}
