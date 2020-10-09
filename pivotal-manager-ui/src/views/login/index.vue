@@ -254,7 +254,7 @@ $cursor: #fff;
 }
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
   $bg: #2d3a4b;
   $dark_gray: #889aa4;
   $light_gray: #eee;
@@ -265,14 +265,14 @@ $cursor: #fff;
     background-color: $bg;
     overflow: hidden;
 
-  .login-form {
-    position: relative;
-    width: 520px;
-    max-width: 100%;
-    padding: 160px 35px 0;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+    .login-form {
+      position: relative;
+      width: 520px;
+      max-width: 100%;
+      padding: 160px 35px 0;
+      margin: 0 auto;
+      overflow: hidden;
+    }
 
   .tips {
     font-size: 14px;
