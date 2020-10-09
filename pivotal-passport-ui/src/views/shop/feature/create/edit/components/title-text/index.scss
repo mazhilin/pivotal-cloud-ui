@@ -1,0 +1,37 @@
+.micro-title-text {
+  .title-text-content {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .title-text-desc {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.375;
+    color: #8c8c8c;
+  }
+
+  .el-color-picker {
+    vertical-align: middle;
+  }
+
+  .el-radio {
+    margin-bottom: 10px;
+
+    .el-radio__label {
+      font-size: 12px;
+    }
+  }
+
+  .reColor {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+}

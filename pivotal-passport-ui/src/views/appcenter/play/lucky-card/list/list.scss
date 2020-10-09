@@ -1,0 +1,15 @@
+.lucky-card-list-container {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .create-new-lucky-btn {
+    position: relative;
+    margin-bottom: 15px;
+
+    .lucky-input {
+      float: right;
+    }
+  }
+}

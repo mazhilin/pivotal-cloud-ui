@@ -1,0 +1,44 @@
+.customer-tag-container {
+  .content-box {
+    margin-top: 15px;
+  }
+
+  .el-tabs__item {
+    font-size: 12px;
+  }
+
+  .el-form-item__label {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .customer-tabs {
+    margin-bottom: 15px;
+
+    .el-tabs--border-card {
+      box-shadow: none;
+      border-bottom: none;
+    }
+
+    .el-tabs__content {
+      display: none;
+    }
+  }
+
+  .slotPagination {
+    padding-left: 15px;
+
+    .el-checkbox {
+      margin-right: 10px;
+    }
+
+    .el-checkbox__label {
+      font-size: 12px;
+    }
+  }
+}

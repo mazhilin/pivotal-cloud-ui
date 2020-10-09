@@ -1,0 +1,7 @@
+.notice {
+  height: 86rpx;
+  line-height: 86rpx;
+  font-size: 24rpx;
+  color: #434343; }
+
+/*# sourceMappingURL=notice.wxss.map */

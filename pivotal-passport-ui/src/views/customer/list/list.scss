@@ -1,0 +1,168 @@
+.customer-list-container {
+
+  .content-box {
+    margin-top: 15px;
+  }
+
+  .e-vue-form-menu {
+    padding-left: 100px;
+  }
+
+  .el-tabs__item {
+    font-size: 12px;
+  }
+
+  .el-form-item__label {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .customer-type {
+    position: relative;
+    background-color: #f7f8fa;
+    flex-wrap: wrap;
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+
+    .customer-type-item {
+      position: relative;
+      padding: 8px 1%;
+      margin-right: 8px;
+      cursor: pointer;
+      width: 110px;
+      min-width: calc(14% - 8px);
+      background-color: #fff;
+      border-radius: 2px;
+      margin-bottom: 16px;
+      border: 1px solid #fff;
+      font-size: 14px;
+
+      &.active {
+        border: 1px solid #155bd4;
+        background-color: #e8effa;
+
+        > span, .el-icon-question, > p {
+          color: #155bd4;
+        }
+      }
+
+      > span {
+        color: #323233;
+      }
+
+      .el-icon-question {
+        color: #cdced0;
+      }
+
+      > p {
+        margin-top: 5px;
+        color: #969799;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .customer-tabs {
+    margin-bottom: 15px;
+
+    .el-tabs--border-card {
+      box-shadow: none;
+      border-bottom: none;
+    }
+
+    .el-tabs__content {
+      display: none;
+    }
+  }
+
+  /** 订单名称*/
+  .customer-name {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-position: center;
+      object-fit: cover;
+    }
+
+    .customer-name-item {
+      display: flex;
+      flex: 1;
+      padding-top: 5px;
+      padding-left: 10px;
+      align-items: center;
+
+      p {
+        position: relative;
+        color: #38f;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .title-edit {
+          position: absolute;
+          right: 2px;
+          bottom: 0;
+          width: 30px;
+          height: 18px;
+          text-align: right;
+          line-height: 18px;
+          vertical-align: middle;
+        }
+      }
+
+      span {
+        color: #f60;
+      }
+    }
+  }
+
+  /** 搜索*/
+  .customer-search {
+    margin-top: 15px;
+    position: relative;
+    background: #f8f8f8;
+    padding: 20px 10px;
+  }
+}
+
+.customer-tab-btn {
+  margin-top: 5px;
+  padding-top: 12px;
+  text-align: right;
+
+  .el-button {
+    border-radius: 0;
+  }
+}
+
+.customer-tab-top {
+  padding: 0 0 10px;
+
+  span {
+    font-size: 12px;
+    margin-left: 10px;
+
+    &:not(:nth-child(1)) {
+      color: #38f;
+      cursor: pointer;
+    }
+
+    &:last-child {
+      float: right;
+      padding-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.targeted-list-container {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-wrap {
+    display: flex;
+
+    .card-wrap-item {
+      white-space: nowrap;
+      padding: 20px 27px 17px;
+      display: flex;
+      flex-direction: column;
+      background: rgba(51, 136, 255, .07);
+      margin-right: 15px;
+      flex: 1;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .el-button {
+        margin-top: 15px;
+      }
+
+      .card-title {
+        font-size: 16px;
+        color: #333;
+      }
+
+      .card-desc {
+        padding-top: 10px;
+        line-height: 18px;
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+
+  /** 商品搜索*/
+  .coupon-search {
+    margin-top: 15px;
+    position: relative;
+    background: #f8f8f8;
+    padding: 15px;
+
+    .coupon-btn {
+      margin-left: 76px;
+    }
+  }
+}

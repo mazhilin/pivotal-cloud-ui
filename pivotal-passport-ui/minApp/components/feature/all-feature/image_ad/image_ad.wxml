@@ -1,0 +1,53 @@
+<view wx:if="{{dataField.imageList.length}}" class="image_ad">
+  <!--一行一个-->
+  <view wx:if="{{dataField.indicator === 1}}">
+    <view class="one-line" data-item="{{item}}" catchtap="adFun" wx:for="{{dataField.imageList}}" wx:key="index">
+      <image style="width:100vw;" mode="widthFix" src="{{item.url}}"></image>
+    </view>
+  </view>
+  <!--轮播海报-->
+  <view wx:if="{{dataField.indicator === 2}}" class="swiper-box">
+    <image mode="widthFix" src="{{dataField.imageList[swiperCurrent].url}}" style="width:100vw;opacity: 0;"></image>
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoPlay}}"
+            interval="{{interval}}"
+            circular="{{circular}}"
+            duration="{{duration}}"
+            bindchange="swiperEnd"
+    >
+      <block wx:for="{{dataField.imageList}}" wx:key="index">
+        <swiper-item>
+          <image style="width:100vw;" data-item="{{item}}" catchtap="adFun" src="{{item.url}}" mode="widthFix"
+                 class="swiper-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--小图横向滑动-->
+  <view wx:if="{{dataField.indicator === 3}}">
+    <scroll-view scroll-x class="ad-scroll">
+      <view class="ad-scroll-item" wx:for="{{dataField.imageList}}" wx:key="index">
+        <image style="width:100vw;" data-item="{{item}}" catchtap="adFun" src="{{item.url}}" mode="widthFix"
+               class="sli-image"></image>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!--热区-->
+  <view wx:if="{{dataField.indicator === 4}}">
+    <view class="hot-area-4" wx:for="{{dataField.imageList}}" wx:key="index">
+      <image style="width:100vw;" mode="widthFix" src="{{item.url}}"></image>
+      <!--wx:if="{{boxItem.link}}"-->
+      <view class="hot-area-one"
+            wx:for="{{item.activeBoxs}}"
+            wx:for-index="boxIndex"
+            wx:for-item="boxItem"
+            wx:key="boxIndex"
+            style="width:{{boxItem.width*dpr}}px;height:{{boxItem.height*dpr}}px;transform: translateX({{boxItem.translateX*dpr}}px) translateY({{boxItem.translateY*dpr}}px);"
+            data-item="{{boxItem}}"
+            catchtap="adFun"
+      ></view>
+    </view>
+  </view>
+
+</view>

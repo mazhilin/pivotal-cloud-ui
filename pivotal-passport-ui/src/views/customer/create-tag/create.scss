@@ -1,0 +1,32 @@
+.customer-tag-create-container {
+  .content-box {
+    margin-top: 15px;
+  }
+
+  .el-form-item__label {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .isAutoTag {
+    padding: 0 0 20px 61px;
+    margin: 0 61px 40px 0;
+    background: #f7f8fa;
+    font-size: 12px;
+
+    .autoTag-rule {
+      padding: 25px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d8d8d8;
+
+      > span {
+        margin-right: 10px;
+      }
+    }
+  }
+}

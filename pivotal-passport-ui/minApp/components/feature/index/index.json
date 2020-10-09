@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "image_ad": "/components/feature/all-feature/image_ad/image_ad",
+    "goods": "/components/feature/all-feature/goods/goods",
+    "notice": "/components/feature/all-feature/notice/notice"
+  }
+}

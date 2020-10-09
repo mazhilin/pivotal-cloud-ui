@@ -1,0 +1,149 @@
+.order-refunds-container {
+  font-size: 12px;
+
+  .content-box {
+    margin-top: 15px;
+  }
+
+  .el-tabs__item {
+    font-size: 12px;
+  }
+
+  .el-form-item__label {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .order-tabs {
+    margin-bottom: 15px;
+
+    .el-tabs--border-card {
+      box-shadow: none;
+      border-bottom: none;
+    }
+
+    .el-tabs__content {
+      display: none;
+    }
+  }
+
+
+  /** 订单搜索*/
+  .order-search {
+    position: relative;
+    background: #f8f8f8;
+    padding: 10px;
+  }
+
+  .type-btn {
+    padding-left: 90px;
+  }
+
+  /**列表*/
+  .list-header {
+    display: flex;
+    background-color: #f7f7f7;
+    border-radius: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    &.margin-box {
+      margin: 10px 0;
+    }
+
+    .list-header-item {
+      padding: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+
+    .goods-cell {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .list-header-col-3 {
+      width: 12.5%;
+    }
+
+    .list-header-col-2 {
+      width: 8.3333333333%;
+    }
+
+    .operation-cell {
+      width: 10%;
+      text-align: right;
+    }
+
+  }
+
+  /**内容列表*/
+  .order-list-block {
+    position: relative;
+    height: initial;
+
+    .order-item {
+      margin-bottom: 16px;
+      border: 1px solid #ebedf0;
+      box-sizing: border-box;
+
+      .order-item-header {
+        padding: 10px;
+        background: #f7f8fa;
+        color: #323233;
+        border-bottom: 1px solid #ebedf0;
+
+        > span {
+          margin-right: 20px;
+
+          span {
+            color: #38f;
+            cursor: pointer;
+          }
+
+          > i {
+            margin-right: 6px;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #38f;
+          }
+        }
+      }
+
+      .order-item-content {
+        background: #fff;
+        color: #323233;
+
+        .list-header {
+          background: transparent;
+
+          .list-header-item {
+            padding: 20px 0;
+
+            .el-button {
+              font-size: 12px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pagination-page {
+    text-align: right;
+
+    .pagination-container {
+      margin-top: 0;
+    }
+  }
+}

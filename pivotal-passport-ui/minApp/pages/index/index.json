@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "feature": "/components/feature/index/index"
+  }
+}

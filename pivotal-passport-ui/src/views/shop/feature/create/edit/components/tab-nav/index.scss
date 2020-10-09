@@ -1,0 +1,235 @@
+.micro-tab-nav-box {
+  .text_overFlow_1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nav-list {
+    display: flex;
+    padding-bottom: 10px;
+
+    .nav-item-item {
+      position: relative;
+      flex: 1;
+      vertical-align: top;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #666666;
+
+      &.active {
+        font-size: 14px;
+        font-weight: bold;
+        color: #222222;
+
+        &:before {
+          position: absolute;
+          content: '';
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          width: 15px;
+          height: 4px;
+          background: rgba(184, 28, 40, 1);
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+
+  .nav-content {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.27);
+  }
+
+  .tab-set {
+    display: flex;
+    text-align: center;
+    padding: 10px 0 20px;
+
+    .tab-set-item {
+      flex: 1;
+      padding: 0 20px;
+
+      .set-item-list {
+        padding: 8px 0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      &.active {
+        .set-item-list {
+          background: #0292fe;
+          border: 1px solid #0292fe;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .tab-set-box {
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 10px;
+
+    .color-set {
+      padding: 0 20px;
+      margin-bottom: 10px;
+
+      .color-set-title {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      .el-color-picker {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .tab-nav-set {
+    .tab-nav-set-item {
+      position: relative;
+      background: #fff;
+      padding: 20px 10px;
+      border: 1px solid #eee;
+      margin-bottom: 10px;
+
+      &:hover {
+        .set-close {
+          display: block;
+        }
+      }
+
+      .set-item-title {
+        font-size: 12px;
+
+        &.choose-micro {
+          transform: translateX(-20px);
+          transition: all 0.3s;
+          width: 0;
+          height: 0;
+          opacity: 0;
+          overflow: hidden;
+          vertical-align: top;
+
+          &.show {
+            width: auto;
+            height: auto;
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        p {
+          display: inline-block;
+          padding-left: 10px;
+        }
+      }
+
+      .set-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+      }
+    }
+
+    .tab-nav-add {
+      margin-top: 20px;
+      background: #fff;
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 15px 0;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .set-box {
+      display: flex;
+
+      .set-image {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(204, 204, 204, 0.9);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+
+        span {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .set-image-add {
+          position: absolute;
+          width: 100%;
+          height: 20px;
+          background: rgba(0, 0, 0, 0.55);
+          bottom: 0;
+          left: 0;
+          font-size: 12px;
+        }
+      }
+
+      .set-info {
+        padding-left: 10px;
+        flex: 1;
+      }
+    }
+  }
+
+  .nav-item-image {
+    padding: 8px 15px 5px 16px;
+
+    .nav-item-image-li {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        img {
+          width: 70px;
+          height: 70px;
+        }
+
+        p {
+          color: #B81C28 !important;
+          font-weight: bold;
+        }
+      }
+
+      img {
+        transition: all 0.28s;
+        width: 62px;
+        height: 62px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      p {
+        width: 62px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}

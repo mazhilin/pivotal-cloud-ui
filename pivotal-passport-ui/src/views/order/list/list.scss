@@ -1,0 +1,304 @@
+.order-list-container {
+  font-size: 12px;
+
+  .content-box {
+    margin-top: 15px;
+  }
+
+  .el-tabs__item {
+    font-size: 12px;
+  }
+
+  .el-form-item__label {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .order-tabs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .el-tabs--border-card {
+      box-shadow: none;
+      border-bottom: none;
+    }
+
+    .el-tabs__content {
+      display: none;
+    }
+  }
+
+  /** 订单搜索*/
+  .order-search {
+    margin-top: 15px;
+    position: relative;
+    background: #f8f8f8;
+    padding: 10px;
+  }
+
+  .type-btn {
+    padding-left: 90px;
+  }
+
+  /*列表*/
+  .list-header {
+    display: flex;
+    background-color: #f7f7f7;
+    border-radius: 1px;
+    margin: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .list-header-item {
+      padding: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+
+    .goods-cell {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .price-cell {
+      width: 10%;
+      text-align: right;
+    }
+
+    .aftermarket-cell {
+      width: 10%;
+
+    }
+
+    .customer-cell {
+      width: 10%;
+      word-break: break-all;
+
+    }
+
+    .express-cell {
+      width: 10%;
+    }
+
+    .pay-price-cell {
+      width: 10%;
+    }
+
+    .state-cell {
+      width: 10%;
+    }
+
+    .operation-cell {
+      width: 10%;
+      text-align: right;
+    }
+
+  }
+
+  .container-static {
+    position: relative;
+    height: initial;
+
+    .order-list-body {
+      min-height: 100px;
+
+      .list-item {
+        margin: 10px 0;
+
+        .list-item-header {
+          background-color: #f8f8f8;
+          border: 1px solid #e5e5e5;
+          border-bottom: 0;
+          padding: 10px;
+          color: #999;
+
+          .list-item-header-row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            .more {
+              margin-right: 10px;
+              color: #38f;
+              cursor: pointer;
+            }
+
+            .remark-content-wrap {
+              display: inline;
+              margin-left: 20px;
+            }
+          }
+
+          .order-no {
+            display: inline-block;
+            margin-right: 10px;
+          }
+
+          .book-time-wrap {
+            margin-right: 15px;
+          }
+
+          .c-gray {
+            color: #999 !important;
+          }
+
+          .circle-dot-wrap {
+            display: inline;
+          }
+        }
+      }
+
+      .new-window {
+        color: #38f;
+      }
+
+      .list-item-body-table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #333;
+
+
+        .list-item-body {
+          width: 100%;
+
+          .goods-item-cell {
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+
+            .goods-info__img {
+              position: relative;
+              width: 60px;
+              height: 60px;
+              max-width: 60px;
+              max-height: 60px;
+              min-width: 60px;
+              margin-right: 10px;
+              object-fit: cover;
+              object-position: center;
+            }
+
+            .goods-info__info {
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              text-align: left;
+
+              .goods-title {
+                margin-bottom: 10px;
+                word-break: break-all;
+              }
+
+              .goods-skus {
+                margin-bottom: 4px;
+              }
+
+              .goods-sku {
+                margin-right: 6px;
+                color: #666;
+              }
+            }
+
+            img::before {
+              position: absolute;
+              display: block;
+              content: '';
+              top: -7px;
+              left: -7px;
+              height: calc(100% + 10px);
+              width: calc(100% + 10px);
+              background-color: #e6e6e6;
+              border: 2px dotted #c8c8c8;
+              border-radius: 5px;
+            }
+
+            img::after {
+              position: absolute;
+              display: block;
+              content: '(>_<)';
+              top: 50%;
+              left: 50%;
+              margin-top: -0.5em;
+              margin-left: -1.5em;
+              height: 1em;
+              line-height: 1em;
+              width: 3em;
+              color: #646464;
+              text-align: center;
+            }
+          }
+        }
+
+        .list-item-row {
+          width: 100%;
+        }
+
+        td {
+          border: 1px solid #e5e5e5;
+          box-sizing: border-box;
+          width: 10%;
+          padding: 10px 5px;
+          text-align: center;
+          vertical-align: top;
+        }
+
+        .remark-row td {
+          text-align: left;
+          padding: 5px 10px;
+          background: #fffaeb;
+          color: #f90;
+
+        }
+
+        .buyerremark-row td {
+          text-align: left;
+          padding: 5px 10px;
+          background: #fdeeee;
+          color: #f66;
+        }
+
+        .goods-cell {
+          width: 40%;
+          padding: 10px;
+        }
+
+        .aftermarket-cell {
+          box-sizing: border-box;
+          text-align: center;
+          width: 10%;
+        }
+
+        .customer-cell {
+          width: 10%;
+          word-break: break-all;
+
+          .user-info {
+            p {
+              margin-bottom: 5px;
+            }
+          }
+        }
+
+        .express-cell,
+        .pay-price-cell,
+        .state-cell,
+        .operation-cell {
+          width: 10%;
+        }
+      }
+    }
+  }
+
+  .pagination-container {
+    margin-top: 0;
+    text-align: right;
+  }
+}

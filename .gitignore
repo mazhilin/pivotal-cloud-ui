@@ -111,4 +111,4 @@ dist
 *.njsproj
 *.sln
 *.sw*
-!/pivotal-passport-ui/
+

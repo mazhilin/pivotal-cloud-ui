@@ -1,0 +1,7 @@
+<view class="micro-box" wx:if="{{isShowMicro}}">
+  <view wx:for="{{list}}" wx:key="inde-x">
+    <image_ad will="{{will}}" dataField="{{item.dataField}}" wx:if="{{item.type === 'image_ad'}}"></image_ad>
+    <goods will="{{will}}" dataField="{{item.dataField}}" wx:if="{{item.type === 'goods'}}"></goods>
+    <notice will="{{will}}" dataField="{{item.dataField}}" wx:if="{{item.type === 'notice'}}"></notice>
+  </view>
+</view>
