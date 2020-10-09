@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: 'PivotalCloud云服务管理平台',
+      title: 'PivotalCloud云服务登录平台',
       logo: '/pivotal-cloud.png'
     }
   }
