@@ -1,6 +1,6 @@
 import defaultSettings from '@/settings'
 
-const title = defaultSettings.title || 'PivotalCloud云服务登录平台'
+const title = defaultSettings.title || 'PivotalCloud登录平台'
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {
