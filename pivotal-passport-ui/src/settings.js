@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'PivotalCloud云服务管理平台',
+  title: 'PivotalCloud登录平台',
 
   /**
    * @type {boolean} true | false

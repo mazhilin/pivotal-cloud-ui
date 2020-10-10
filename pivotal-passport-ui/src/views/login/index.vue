@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">PivotalCloud云服务管理平台</h3>
+        <h3 class="title">PivotalCloud登录平台</h3>
       </div>
 
       <el-form-item prop="username">
